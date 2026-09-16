@@ -18,7 +18,33 @@ Prosjektet skal holdes enkelt: én statisk nettside, uten backend, database, inn
 
 ## Komme i gang
 
-Prosjektet er foreløpig i planleggingsfasen. Neste steg er å initialisere et Vite-prosjekt med TypeScript ved hjelp av Bun.
+Hello World-siden er implementert med en automatisert test og kommandoer for lokal utvikling og bygging. Publisering av nettsiden er ennå ikke konfigurert.
+
+Du må ha Bun installert. Kjør kommandoene i prosjektmappen:
+
+| Kommando | Hva den gjør |
+| --- | --- |
+| `bun install` | Installerer prosjektets avhengigheter. Kjør denne først. |
+| `bun run dev` | Starter utviklingsserveren. Åpne adressen som vises i terminalen. |
+| `bun run test` | Kjører testene én gang. |
+| `bun run test:watch` | Kjører testene på nytt når du endrer filer. |
+| `bun run build` | Kontrollerer TypeScript og lager produksjonsbygget i `dist/`. |
+| `bun run preview` | Starter lokal forhåndsvisning av produksjonsbygget. Krever at `bun run build` er kjørt først. |
+
+Stopp utviklingsserveren, testovervåkingen eller forhåndsvisningen med `Ctrl+C`.
+
+## Viktige filer og mapper
+
+- `index.html`: inngangssiden som laster applikasjonen.
+- `src/main.ts`: bygger innholdet på siden.
+- `src/greeting.ts`: definerer Hello World-hilsenen.
+- `src/style.css`: bestemmer sidens utseende.
+- `tests/`: automatiserte tester, foreløpig for hilsenen.
+- `package.json`: kommandoer og avhengigheter.
+- `bun.lock`: låser avhengighetene til bestemte versjoner.
+- `tsconfig.json`: innstillinger for TypeScript.
+- `dist/`: genererte filer fra produksjonsbygget, ikke lagret i Git.
+- `PROJECT.md` og `AGENTS.md`: prosjektets rammer og arbeidsregler.
 
 ## Arbeidsform
 
