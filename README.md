@@ -18,7 +18,7 @@ Prosjektet skal holdes enkelt: én statisk nettside, uten backend, database, inn
 
 ## Komme i gang
 
-Hello World-siden er implementert med en automatisert test og kommandoer for lokal utvikling og bygging. Publisering av nettsiden er ennå ikke konfigurert.
+Hello World-siden er implementert med en automatisert test og kommandoer for lokal utvikling og bygging.
 
 Du må ha Bun installert. Kjør kommandoene i prosjektmappen:
 
@@ -32,6 +32,12 @@ Du må ha Bun installert. Kjør kommandoene i prosjektmappen:
 | `bun run preview` | Starter lokal forhåndsvisning av produksjonsbygget. Krever at `bun run build` er kjørt først. |
 
 Stopp utviklingsserveren, testovervåkingen eller forhåndsvisningen med `Ctrl+C`.
+
+## Publisering
+
+Nettsiden er publisert på [https://darwindog.github.io/hello-codex/](https://darwindog.github.io/hello-codex/).
+
+GitHub Actions tester automatisk prosjektet, bygger nettsiden og publiserer den til GitHub Pages når endringer pushes til `main`.
 
 ## Viktige filer og mapper
 
